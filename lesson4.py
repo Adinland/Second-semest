@@ -8,4 +8,4 @@ print("S = ", a * b, "\nP = ", 2*a+2*b)
 
 print("\tЗадание 2\nПросто (добавь воды) введите число:")
 a = input()
-print(float(str(a[3])) ** float(str(a[4])) * float(str(a[2])) / (float(str(a[0])) - float(str(a[1]))))
+print(float(a[3]) ** float(a[4]) * float(a[2]) / (float(a[0]) - float(a[1])))
