@@ -1,7 +1,9 @@
-print("\tExercise 1\nEnter the name of your pet, then its age")
+print("\tExercise 1\nВведите вид животного, имя, затем возрост:")
+pet_kind = input()
 pet_name = input()
 pet_age = input()
-print(pet_name, pet_age)
+print("Это", pet_kind, "по кличке", pet_name + '.', "Возраст:", pet_age, "года.")
+
 print("\tExercise 2\nOne by one enter the name of the main stages of human evolution")
 fst_stage = input()
 scnd_stage = input()
