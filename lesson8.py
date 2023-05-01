@@ -32,7 +32,16 @@ all_weight = 0
 amount_boat = 0
 for i in p_weight:
     all_weight += i
-while all_weight > 0:
-    amount_boat += 1
-    all_weight -= b_weight
+if all_weight < b_weight:
+    while amount_people > 0:
+        amount_boat += 1
+        amount_people -= 2
+elif all_weight > b_weight:
+    while all_weight > 0:
+        amount_boat += 1
+        all_weight -= b_weight
+elif all_weight % b_weight == 0:
+    while all_weight > 0:
+        amount_boat += 1
+        all_weight -= b_weight
 print(f"Минимально необходимое количество лодок: {amount_boat}")
