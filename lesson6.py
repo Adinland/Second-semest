@@ -17,7 +17,8 @@ print("Делители:")
 for i in range(1, N + 1):
     if N % i == 0:
         count +=1
-        print(i, end=' ')
+        #print(i, end=' ')
+print(f"Количество делителей: {count}")
 
 print("\tЗадание 3\nВведите А и В, где А < В")
 A = int(input())
