@@ -83,13 +83,18 @@ def delete(pet_dict):
                     for j in pet_dict[i]:
                         pet_dict[i - 1] = pet_dict.pop(i)
 
+def get_pet_list(pet_dict):
+    for i in pet_dict:
+        print(i, pet_dict[i])
+
+
 #проверочные данные
 pets = {1:{"Брюч":{"Вид":"Карликовый питон","Возраст": 33,"Владелец":"Саня"}}, 
         2:{"Бирс":{"Вид":"Камышовый кот","Возраст": 21,"Владелец":"Даня"}}, 
         3:{"Бусь":{"Вид":"Дворняга","Возраст": 27,"Владелец":"Гена"}}}#dict()
 command = ''
-while command != '5':
-    print("-> Выберите действие:\n\t1)Создать запись\n\t2)Просмотреть запись\n\t3)Обновить запись\n\t4)Удалить запись\n\t5Выход")
+while command != '6':
+    print("-> Выберите действие:\n\t1)Создать запись\n\t2)Просмотреть запись\n\t3)Обновить запись\n\t4)Удалить запись\n\t5)Список\n\t6)Выход")
     command = input()
     if command == '1':
         create(pets)
@@ -100,6 +105,8 @@ while command != '5':
     elif command == '4':
         delete(pets)
     elif command == '5':
+        get_pet_list(pets)
+    elif command == '6':
         print("-> Выход...")
     else:
         print("-> Ошибка: некорректная команда")
