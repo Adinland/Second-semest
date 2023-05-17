@@ -9,7 +9,7 @@ def my_func(num):
 a  = int(input())
 print(f"Факториал = {my_func(a)}")
 my_list = []
-for i in range(a, 0, -1):
+for i in range(1, a + 1):
     fact = 1
     for j in range(1, i + 1):
         fact *= j
