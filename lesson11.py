@@ -7,9 +7,10 @@ def my_func(num):
     return fact
 
 a  = int(input())
-print(f"Факториал = {my_func(a)}")
+f = my_func(a)
+print(f"Факториал = {f}")
 my_list = []
-for i in range(1, a + 1):
+for i in range(f, 0, -1):
     fact = 1
     for j in range(1, i + 1):
         fact *= j
