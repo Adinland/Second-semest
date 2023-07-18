@@ -1,1 +1,2 @@
-rm -rf ./attachments
+pth=$(pwd)
+rm -rf $pth/attachments
